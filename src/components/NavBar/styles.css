@@ -1,0 +1,15 @@
+.encabezado {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10%;
+    background-color: crimson;
+    color: black;
+}
+
+a {
+    text-transform: uppercase;
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 22px;
+}
