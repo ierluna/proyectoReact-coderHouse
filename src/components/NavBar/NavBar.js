@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import {CartWidget} from "./CartWidget/CartWidget";
 import './styles.css'
 
@@ -9,15 +10,18 @@ export const NavBar = () => {
 
         <header className="encabezado">
             
-            <h1>TIENDA RIVOLTA</h1>
+            <Link to={"/"}><h1>TIENDA RIVOLTA</h1></Link>
 
-            <nav>
-                <a href="">Inicio |</a>
-                <a href=""> Catálogo |</a>
-                <a href=""> Politica de cambios |</a>
-                <a href=""> Contacto |</a>
- 
-            </nav>
+
+        <nav>
+            <Link className="mx-1" to={"/"}>Inicio</Link>
+            <Link className="mx-1" to={"/nosotros"}>Nosotros</Link>
+            <Link className="mx-1" to={"/cart"}>Carrito</Link>
+            <Link className="mx-1" to={"/category/calzado"}>Calzado</Link>
+            <Link className="mx-1" to={"/category/remeras"}>Remeras</Link>
+            <Link className="mx-1" to={"/category/pantalones"}>Pantalones</Link>
+        
+        </nav>
 
             
             <CartWidget/>
